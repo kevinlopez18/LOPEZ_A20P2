@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ACTIVIDAD 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  Nota:{{nota}}
+
+  <p *ngIf="nota>=5">has aprobado</p>
+
+  <p *ngIf="nota>=7 && nota<9"> notable</p>
+
+  <p *ngIf="(nota>=9 && asignatura=='matematicas') || (edad==16)"> estudia aeronautica </p>
+  
+  Nota:
+  <input type="button" value="+" (click)="nota=nota+1">
+  <input type="button" value="-" (click)="nota=nota-1"> 
+
+</ion-content>

@@ -1,5 +1,7 @@
 {
   "name": "LOPEZ_A20P2",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

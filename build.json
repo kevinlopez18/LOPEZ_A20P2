@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "lop.keystore",  
+            "storePassword": "123456",
+            "alias": "lopezkey",
+            "password" : "123456",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "lop.keystore",
+            "storePassword": "123456",
+            "alias": "lopezkey",
+            "password" : "123456",
+            "keystoreType": ""
+        }
+    }
+}

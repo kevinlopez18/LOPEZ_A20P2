@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ACTIVIDAD 6</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+
+    <br>
+    <h1>Pipes</h1>
+    <hr>
+  
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Variable</th>
+          <th scope="col">Pipe</th>
+          <th scope="col">Dato Modificado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td> {{ nombre }} </td>
+        <td> UpperCasePipe </td>
+        <td> {{ nombre | uppercase }} </td>
+      </tr>
+      <tr>
+        <td> {{ nombre }} </td>
+        <td> LowerCasePipe </td>
+        <td> {{ nombre | lowercase }} </td>
+      </tr>
+      <tr>
+        <td> {{LibroTile }} </td>
+        <td> TitleCasePipe </td>
+        <td> {{ LibroTile | titlecase }} </td>
+      </tr>
+      <tr>
+        <td> {{ collection }} </td>
+        <td> SlicePipe </td>
+        <td> {{ collection | slice:1:4 }} </td>
+      </tr>
+      <tr>
+        <td> {{ PI }} </td>
+        <td> DecimalPipe </td>
+        <td> {{ PI | number:'3.2-4' }} </td>
+      </tr>
+      <tr>
+        <td> {{ porcentPipe}} </td>
+        <td> PercentPipe </td>
+        <td> {{ porcentPipe | percent}} </td>
+      </tr>
+      <tr>
+        <td> {{ money}} </td>
+        <td> CurrencyPipe </td>
+        <td> {{ money | currency:'ILS':true:'1.1-2'}} </td>
+      </tr>
+      <tr>
+        <td> {{ valorDePromesa }} </td>
+        <td> async </td>
+        <td> {{ valorDePromesa | async }} </td>
+      </tr>
+      <tr>
+        <td> {{ fecha }} </td>
+        <td> date </td>
+        <td> {{ fecha | date }} </td>
+      </tr>
+  
+      
+    <h4>JSON</h4>
+    <pre> {{ heroe | json }} </pre>
+  
+      </tbody>
+    </table>
+  
+  </div>
+</ion-content>
